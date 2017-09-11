@@ -1,3 +1,7 @@
+package view;
+
+import controller.Interface;
+import controller.Implementacao;
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
