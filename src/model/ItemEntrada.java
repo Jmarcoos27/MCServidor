@@ -5,11 +5,13 @@
  */
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Ero
  */
-public class ItemEntrada extends ItemMovimenta {
+public class ItemEntrada extends ItemMovimenta implements Serializable {
     private Entrada entrada;
     /**
      * @return the entrada

@@ -5,10 +5,26 @@
  */
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Ero
  */
-public class Entrada {
-    
+public class Entrada extends Movimentacao implements Serializable {
+
+    /**
+     * @return the cliente
+     */
+    public Pessoa getCliente() {
+        return cliente;
+    }
+
+    /**
+     * @param cliente the cliente to set
+     */
+    public void setCliente(Pessoa cliente) {
+        this.cliente = cliente;
+    }
+    private Pessoa cliente;
 }
