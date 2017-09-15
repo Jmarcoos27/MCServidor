@@ -52,7 +52,7 @@ public class ImplementacaoProduto extends UnicastRemoteObject implements Interfa
         sql = "DELETE FROM produto WHERE idProduto = ?";
         try{
             stm = conexao.con.prepareStatement(sql);
-            stm.setInt(1, this.getIdProduto(p));
+            stm.setInt(1, this.getProdutoId(p));
             retornoProduto = stm.executeUpdate();
             stm.close();
         }
@@ -77,7 +77,7 @@ public class ImplementacaoProduto extends UnicastRemoteObject implements Interfa
            stm.setDouble(3, p.getValorEntrada());
            stm.setDouble(4,p.getValorSaidaAvista());
            stm.setDouble(5, p.getValorSaidaAPrazo());
-           stm.setInt(6, this.getIdProduto(p));
+           stm.setInt(6, this.getProdutoId(p));
            retornoProduto = stm.executeUpdate();
            stm.close();
        }
@@ -87,8 +87,9 @@ public class ImplementacaoProduto extends UnicastRemoteObject implements Interfa
        }
        return retornoProduto;
     }
-
-    private int getIdProduto(Produto p) {
+    
+    @Override
+    public int getProdutoId(Produto p) {
         int idProduto = 0;
         conexao = new Conexao();
         sql = "SELECT idProduto FROM produto WHERE descricao = '"+ p.getDescricao()+"'";

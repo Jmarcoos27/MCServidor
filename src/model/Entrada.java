@@ -12,19 +12,19 @@ import java.io.Serializable;
  * @author Ero
  */
 public class Entrada extends Movimentacao implements Serializable {
-
+    private int cliente;
     /**
      * @return the cliente
      */
-    public Pessoa getCliente() {
+    public int getCliente() {
         return cliente;
     }
 
     /**
      * @param cliente the cliente to set
      */
-    public void setCliente(Pessoa cliente) {
+    public void setCliente(int cliente) {
         this.cliente = cliente;
     }
-    private Pessoa cliente;
+
 }

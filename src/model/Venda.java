@@ -11,6 +11,20 @@ import java.io.Serializable;
  *
  * @author Ero
  */
-public class Venda implements Serializable {
-    
+public class Venda extends Movimentacao implements Serializable {
+
+    private int cliente;
+    /**
+     * @return the cliente
+     */
+    public int getCliente() {
+        return cliente;
+    }
+
+    /**
+     * @param cliente the cliente to set
+     */
+    public void setCliente(int cliente) {
+        this.cliente = cliente;
+    }
 }

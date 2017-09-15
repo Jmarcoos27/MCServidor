@@ -5,26 +5,28 @@
  */
 package model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Ero
  */
-public class ItemMovimenta {
-    private Produto produto;
+public class ItemMovimenta implements Serializable {
+    private int produto;
     private double quantidade;
     private double valorItem;
     
     /**
      * @return the produto
      */
-    public Produto getProduto() {
+    public int getProduto() {
         return produto;
     }
 
     /**
      * @param produto the produto to set
      */
-    public void setProduto(Produto produto) {
+    public void setProduto(int produto) {
         this.produto = produto;
     }
 

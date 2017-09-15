@@ -17,4 +17,5 @@ public interface InterfaceProduto extends Remote{
     public int adicionarProduto(Produto p) throws RemoteException;
     public int excluirProduto(Produto p) throws RemoteException;
     public int alterarProduto(Produto p) throws RemoteException;
+    public int getProdutoId(Produto p) throws RemoteException;
 }

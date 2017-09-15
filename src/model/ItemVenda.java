@@ -11,20 +11,20 @@ import java.io.Serializable;
  *
  * @author Ero
  */
-public class ItensVenda extends ItemMovimenta implements Serializable{
+public class ItemVenda extends ItemMovimenta implements Serializable{
    
-    private Venda codVenda;
+    private int codVenda;
     /**
      * @return the codVenda
      */
-    public Venda getCodVenda() {
+    public int getCodVenda() {
         return codVenda;
     }
 
     /**
      * @param codVenda the codVenda to set
      */
-    public void setCodVenda(Venda codVenda) {
+    public void setCodVenda(int codVenda) {
         this.codVenda = codVenda;
     } 
 }

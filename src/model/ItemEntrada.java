@@ -12,18 +12,18 @@ import java.io.Serializable;
  * @author Ero
  */
 public class ItemEntrada extends ItemMovimenta implements Serializable {
-    private Entrada entrada;
+    private int entrada;
     /**
      * @return the entrada
      */
-    public Entrada getEntrada() {
+    public int getCodEntrada() {
         return entrada;
     }
 
     /**
      * @param entrada the entrada to set
      */
-    public void setEntrada(Entrada entrada) {
+    public void setCodEntrada(int entrada) {
         this.entrada = entrada;
     }
 }

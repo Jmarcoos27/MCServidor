@@ -6,26 +6,40 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  *
  * @author Ero
  */
 public class Movimentacao implements Serializable {
-    private Date data;
+
+    private int numero;
+    private String data;
     private double valorTotal;
+    /**
+     * @return the numero
+     */
+    public int getNumero() {
+        return numero;
+    }
+
+    /**
+     * @param numero the numero to set
+     */
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
     /**
      * @return the data
      */
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
     /**
      * @param data the data to set
      */
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
